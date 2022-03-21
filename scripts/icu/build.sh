@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export LIB_VER=${LIB_VER:-"release-67-1"}  # boost depends on it so if you change here remember to update boost script
+export LIB_VER=${LIB_VER:-"release-70-1"}  # boost depends on it so if you change here remember to update boost script
 export NAME="icu"
 export EXTRACT_DIR="/tmp/${NAME}"
 export INSTALL_DIR="/tmp/build/${NAME}"

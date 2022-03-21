@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export LIB_VER=${LIB_VER:-"3.3.7"}
+export LIB_VER=${LIB_VER:-"3.4.0"}
 export NAME="eigen"
 export EXTRACT_DIR="/tmp/${NAME}"
 export INSTALL_DIR="/tmp/build/${NAME}"
@@ -17,7 +17,7 @@ function build_and_install()
     cmake -DCMAKE_INSTALL_PREFIX=$1 ..
   fi
   make -j4
-  
+
   if [ $# -eq 0 ]; then
     # No argument passed: installing in the system.
     echo "Installing Eigen3 in the system"

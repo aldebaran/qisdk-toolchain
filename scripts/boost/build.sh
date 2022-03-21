@@ -3,12 +3,12 @@
 # This script's directory: https://stackoverflow.com/questions/59895/how-can-i-get-the-source-directory-of-a-bash-script-from-within-the-script-itsel
 export THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
-export LIB_VER=${LIB_VER:-"64"}
+export LIB_VER=${LIB_VER:-"77"}
 export NAME="boost"
 export EXTRACT_DIR="/tmp/"
 export INSTALL_DIR="/tmp/build/${NAME}"
 export PKG_URL="http://sourceforge.net/projects/boost/files/boost/1.${LIB_VER}.0/boost_1_${LIB_VER}_0.tar.gz"
-export ICU_ROOT="/usr/local/lib/icu/67.1/"
+export ICU_ROOT="/usr/local/lib/icu/70.1/"
 
 function build_and_install()
 {

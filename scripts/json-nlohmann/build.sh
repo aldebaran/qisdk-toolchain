@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export LIB_VER=${LIB_VER:-"v3.8.0"}
+export LIB_VER=${LIB_VER:-"v3.10.5"}
 export NAME="json"
 export EXTRACT_DIR="/tmp/${NAME}"
 export INSTALL_DIR="/tmp/build/${NAME}"

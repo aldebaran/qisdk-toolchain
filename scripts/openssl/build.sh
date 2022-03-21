@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export LIB_VER=${LIB_VER:-"OpenSSL_1_0_2u"}
+export LIB_VER=${LIB_VER:-"OpenSSL_1_1_1m"}
 export NAME="openssl"
 export EXTRACT_DIR="/tmp/${NAME}"
 export INSTALL_DIR="/tmp/build/${NAME}"
@@ -16,7 +16,7 @@ function build_and_install()
 
   echo "Building OpenSSL with C++ flags: ${CPPFLAGS} ${CXXFLAGS}"
   make -j4
-  
+
   if [ $# -eq 0 ]; then
     # No argument passed: installing in the system.
     echo "Installing OpenSSL in the system"
